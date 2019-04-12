@@ -1,0 +1,36 @@
+{
+  "name": "signup_login",
+  "version": "1.0.0",
+  "description": "Signup and Login Pages",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "VarshathPoorva",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "font-awesome": "^4.7.0",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.4.0",
+    "mdbreact": "^4.10.0",
+    "mongoose": "^5.4.11",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.11.0",
+    "web3": "^1.0.0-beta.46"
+  },
+  "devDependencies": {
+    "mongoose-transactions": "^1.1.1",
+    "multer": "^1.4.1",
+    "nodemon": "^1.18.10"
+  }
+}
